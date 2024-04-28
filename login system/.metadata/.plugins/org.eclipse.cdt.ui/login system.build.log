@@ -1,0 +1,156 @@
+13:47:59 **** Build of configuration Debug for project login system ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+Finished building: ../ADC.c
+ 
+Building file: ../EEPROM.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EEPROM.d" -MT"EEPROM.o" -c -o "EEPROM.o" "../EEPROM.c"
+Finished building: ../EEPROM.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../I2C.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"I2C.d" -MT"I2C.o" -c -o "I2C.o" "../I2C.c"
+Finished building: ../I2C.c
+ 
+Building file: ../KEYBAD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"KEYBAD.d" -MT"KEYBAD.o" -c -o "KEYBAD.o" "../KEYBAD.c"
+In file included from ../KEYBAD.c:9:
+../KEYBAD_cfg.h:19:94: warning: "/*" within comment
+In file included from ../KEYBAD.c:9:
+../KEYBAD_cfg.h:22: warning: data definition has no type or storage class
+../KEYBAD_cfg.h:22: warning: type defaults to 'int' in declaration of 'keybad_arr1'
+In file included from ../KEYBAD.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../KEYBAD.c: In function 'Keybad_getValue':
+../KEYBAD.c:39: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../KEYBAD.c:43: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../KEYBAD.c:46: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../KEYBAD.c:49: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../KEYBAD.c:55: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../KEYBAD.c:30: warning: unused variable 'flag'
+Finished building: ../KEYBAD.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_void_Init':
+../LCD.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:22: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:24: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:26: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendData':
+../LCD.c:60: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendCommand':
+../LCD.c:67: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'H_LCD_void_latchByte':
+../LCD.c:170: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:171: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:172: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:173: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:175: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:177: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:180: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:181: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:182: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:183: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:185: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:187: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../LCD.c
+ 
+Building file: ../RTC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"RTC.d" -MT"RTC.o" -c -o "RTC.o" "../RTC.c"
+../RTC.c:18: warning: type defaults to 'int' in declaration of 'decimalToBCD'
+../RTC.c:18: warning: 'decimalToBCD' declared 'static' but never defined
+Finished building: ../RTC.c
+ 
+Building file: ../SPI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"SPI.d" -MT"SPI.o" -c -o "SPI.o" "../SPI.c"
+Finished building: ../SPI.c
+ 
+Building file: ../SevenSegment.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"SevenSegment.d" -MT"SevenSegment.o" -c -o "SevenSegment.o" "../SevenSegment.c"
+In file included from ../SevenSegment.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../SevenSegment.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:116: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:120: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:127: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:131: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../Timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer1.d" -MT"Timer1.o" -c -o "Timer1.o" "../Timer1.c"
+../Timer1.c:16: warning: 'T1_ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer1.c
+ 
+Building file: ../UART.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"UART.d" -MT"UART.o" -c -o "UART.o" "../UART.c"
+Finished building: ../UART.c
+ 
+Building file: ../WDT.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"WDT.d" -MT"WDT.o" -c -o "WDT.o" "../WDT.c"
+Finished building: ../WDT.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:298: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c: At top level:
+../LCD_priv.h:27: warning: 'H_LCD_void_latchByte' declared 'static' but never defined
+Finished building: ../main.c
+ 
+Building target: login system.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,login system.map -mmcu=atmega16 -o "login system.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./EEPROM.o ./EXTI.o ./GIE_R.o ./GPIO.o ./I2C.o ./KEYBAD.o ./LCD.o ./RTC.o ./SPI.o ./SevenSegment.o ./Timer0.o ./Timer1.o ./UART.o ./WDT.o ./main.o   
+avr-gcc.exe: system.map: No such file or directory
+make: *** [login system.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+13:48:06 Build Failed. 1 errors, 44 warnings. (took 6s.593ms)
+

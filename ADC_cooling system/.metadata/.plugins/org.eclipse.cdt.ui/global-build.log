@@ -1,0 +1,2163 @@
+13:31:07 **** Clean-only build of configuration Debug for project AVR_INTERFACING ****
+make clean 
+rm -rf  AVR_INTERFACING.hex  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o  sizedummy  AVR_INTERFACING.lss  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./ADC.d ./DC_MOTOR.d ./EXTI.d ./GIE_R.d ./GPIO.d ./LCD.d ./LM35.d ./Timer0.d ./main.d  AVR_INTERFACING.elf
+ 
+13:31:07 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_init':
+../ADC.c:15: error: expected ')' before 'uint8'
+../ADC.c:15: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:15: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:18: error: expected ')' before 'uint8'
+../ADC.c:18: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:18: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:19: error: expected ')' before 'uint8'
+../ADC.c:19: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:19: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:22: error: expected ')' before 'uint8'
+../ADC.c:22: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:22: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:25: error: expected ')' before 'uint8'
+../ADC.c:25: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:25: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:26: error: expected ')' before 'uint8'
+../ADC.c:26: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:26: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:27: error: expected ')' before 'uint8'
+../ADC.c:27: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:27: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:30: error: expected ')' before 'uint8'
+../ADC.c:30: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:30: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:33: error: expected ')' before 'uint8'
+../ADC.c:33: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:33: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:36: error: expected ')' before 'uint8'
+../ADC.c:36: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:36: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:37: error: expected ')' before 'uint8'
+../ADC.c:37: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:37: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:38: error: expected ')' before 'uint8'
+../ADC.c:38: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:38: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:44: error: expected ')' before 'uint8'
+../ADC.c:44: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:44: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:47: error: expected ')' before 'uint8'
+../ADC.c:47: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:47: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c: At top level:
+../ADC.c:50: error: expected ')' before 'CH_num'
+../ADC.c: In function 'ADC_autotrigger_init':
+../ADC.c:71: error: expected ')' before 'uint8'
+../ADC.c:71: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:71: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:74: error: expected ')' before 'uint8'
+../ADC.c:74: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:74: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:75: error: expected ')' before 'uint8'
+../ADC.c:75: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:75: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:78: error: expected ')' before 'uint8'
+../ADC.c:78: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:78: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:81: error: expected ')' before 'uint8'
+../ADC.c:81: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:81: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:82: error: expected ')' before 'uint8'
+../ADC.c:82: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:82: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:83: error: expected ')' before 'uint8'
+../ADC.c:83: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:83: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:86: error: expected ')' before 'uint8'
+../ADC.c:86: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:86: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:89: error: expected ')' before 'uint8'
+../ADC.c:89: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:89: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:92: error: expected ')' before 'uint8'
+../ADC.c:92: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:92: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:93: error: expected ')' before 'uint8'
+../ADC.c:93: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:93: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:94: error: expected ')' before 'uint8'
+../ADC.c:94: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:94: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:97: error: expected ')' before 'uint8'
+../ADC.c:97: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:97: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:100: error: expected ')' before 'uint8'
+../ADC.c:100: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:100: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:103: error: expected ')' before 'uint8'
+../ADC.c:103: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:103: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c: At top level:
+../ADC.c:106: error: expected ')' before 'CH_num'
+make: *** [ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:32:26 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_init':
+../ADC.c:15: error: expected ')' before 'uint8'
+../ADC.c:15: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:15: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:18: error: expected ')' before 'uint8'
+../ADC.c:18: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:18: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:19: error: expected ')' before 'uint8'
+../ADC.c:19: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:19: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:22: error: expected ')' before 'uint8'
+../ADC.c:22: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:22: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:25: error: expected ')' before 'uint8'
+../ADC.c:25: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:25: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:26: error: expected ')' before 'uint8'
+../ADC.c:26: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:26: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:27: error: expected ')' before 'uint8'
+../ADC.c:27: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:27: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:30: error: expected ')' before 'uint8'
+../ADC.c:30: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:30: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:33: error: expected ')' before 'uint8'
+../ADC.c:33: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:33: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:36: error: expected ')' before 'uint8'
+../ADC.c:36: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:36: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:37: error: expected ')' before 'uint8'
+../ADC.c:37: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:37: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:38: error: expected ')' before 'uint8'
+../ADC.c:38: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:38: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:44: error: expected ')' before 'uint8'
+../ADC.c:44: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:44: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:47: error: expected ')' before 'uint8'
+../ADC.c:47: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:47: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c: In function 'ADC_readChannel':
+../ADC.c:53: error: expected ')' before 'uint8'
+../ADC.c:53: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:53: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:53: error: expected ')' before 'uint8'
+../ADC.c:53: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:53: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:56: warning: implicit declaration of function 'SET_BIT'
+../ADC.c:56: error: expected ')' before 'uint8'
+../ADC.c:56: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:56: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:59: error: expected ')' before 'uint8'
+../ADC.c:59: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:59: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:62: error: expected ')' before 'uint8'
+../ADC.c:62: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:62: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:65: error: expected ')' before 'uint16'
+../ADC.c:65: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:65: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c: In function 'ADC_autotrigger_init':
+../ADC.c:71: error: expected ')' before 'uint8'
+../ADC.c:71: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:71: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:74: error: expected ')' before 'uint8'
+../ADC.c:74: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:74: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:75: error: expected ')' before 'uint8'
+../ADC.c:75: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:75: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:78: error: expected ')' before 'uint8'
+../ADC.c:78: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:78: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:81: error: expected ')' before 'uint8'
+../ADC.c:81: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:81: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:82: error: expected ')' before 'uint8'
+../ADC.c:82: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:82: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:83: error: expected ')' before 'uint8'
+../ADC.c:83: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:83: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:86: error: expected ')' before 'uint8'
+../ADC.c:86: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:86: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:89: error: expected ')' before 'uint8'
+../ADC.c:89: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:89: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:92: error: expected ')' before 'uint8'
+../ADC.c:92: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:92: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:93: error: expected ')' before 'uint8'
+../ADC.c:93: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:93: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:94: error: expected ')' before 'uint8'
+../ADC.c:94: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:94: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:97: error: expected ')' before 'uint8'
+../ADC.c:97: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:97: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:100: error: expected ')' before 'uint8'
+../ADC.c:100: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:100: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:103: error: expected ')' before 'uint8'
+../ADC.c:103: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:103: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c: In function 'ADC_autotrigger_readChannel':
+../ADC.c:109: error: expected ')' before 'uint8'
+../ADC.c:109: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:109: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:109: error: expected ')' before 'uint8'
+../ADC.c:109: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:109: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:112: error: expected ')' before 'uint8'
+../ADC.c:112: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:112: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:115: error: expected ')' before 'uint16'
+../ADC.c:115: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:115: error: invalid type argument of 'unary *' (have 'int')
+../ADC.c:118: error: expected ')' before 'uint8'
+../ADC.c:118: warning: type defaults to 'int' in declaration of 'type name'
+../ADC.c:118: error: invalid type argument of 'unary *' (have 'int')
+make: *** [ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:33:43 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_readChannel':
+../ADC.c:56: warning: implicit declaration of function 'SET_BIT'
+Finished building: ../ADC.c
+ 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_void_Init':
+../LCD.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:22: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:24: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:26: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendData':
+../LCD.c:60: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendCommand':
+../LCD.c:67: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'H_LCD_void_latchByte':
+../LCD.c:170: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:171: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:172: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:173: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:175: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:177: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:180: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:181: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:182: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:183: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:185: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:187: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../LCD.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_init':
+../LM35.c:21: error: 'ADC_CFG' undeclared (first use in this function)
+../LM35.c:21: error: (Each undeclared identifier is reported only once
+../LM35.c:21: error: for each function it appears in.)
+../LM35.c:21: error: expected ';' before 'cfg'
+../LM35.c:22: warning: implicit declaration of function 'ADC_Init'
+../LM35.c:22: error: 'cfg' undeclared (first use in this function)
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:30: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LM35.c:34: warning: implicit declaration of function 'ADC_getDigitalValueSynchNonBlocking'
+make: *** [LM35.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:35:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LM35.c:39: error: invalid operands to binary * (have 'u16 *' and 'long unsigned int')
+make: *** [LM35.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:35:24 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:32: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+./ADC.o: In function `ADC_init':
+../ADC.c:25: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:37:02 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_readChannel':
+../ADC.c:56: warning: implicit declaration of function 'SET_BIT'
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+./ADC.o: In function `ADC_init':
+../ADC.c:25: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:38:06 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_readChannel':
+../ADC.c:56: warning: implicit declaration of function 'SET_BIT'
+Finished building: ../ADC.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:32: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+./ADC.o: In function `ADC_init':
+../ADC.c:25: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:38:15 **** Clean-only build of configuration Debug for project AVR_INTERFACING ****
+make clean 
+rm -rf  AVR_INTERFACING.hex  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o  sizedummy  AVR_INTERFACING.lss  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./ADC.d ./DC_MOTOR.d ./EXTI.d ./GIE_R.d ./GPIO.d ./LCD.d ./LM35.d ./Timer0.d ./main.d  AVR_INTERFACING.elf
+ 
+13:38:16 **** Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_readChannel':
+../ADC.c:56: warning: implicit declaration of function 'SET_BIT'
+Finished building: ../ADC.c
+ 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_void_Init':
+../LCD.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:22: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:24: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:26: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendData':
+../LCD.c:60: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendCommand':
+../LCD.c:67: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'H_LCD_void_latchByte':
+../LCD.c:170: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:171: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:172: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:173: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:175: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:177: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:180: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:181: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:182: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:183: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:185: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:187: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../LCD.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:32: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+./ADC.o: In function `ADC_init':
+../ADC.c:25: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+../ADC.c:27: undefined reference to `SET_BIT'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:39:21 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12106 bytes (73.9% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:40:39 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12106 bytes (73.9% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:54:49 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12118 bytes (74.0% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:55:34 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LM35.c:39: error: invalid operands to binary * (have 'u16 *' and 'long unsigned int')
+make: *** [LM35.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:55:44 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12120 bytes (74.0% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:56:02 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12124 bytes (74.0% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:56:33 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:31: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12118 bytes (74.0% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:49:51 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+In file included from ../ADC.c:8:
+../ADC.h:16: error: redeclaration of enumerator 'CH_0'
+../ADC_cfg.h:42: error: previous definition of 'CH_0' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_1'
+../ADC_cfg.h:42: error: previous definition of 'CH_1' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_2'
+../ADC_cfg.h:42: error: previous definition of 'CH_2' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_3'
+../ADC_cfg.h:42: error: previous definition of 'CH_3' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_4'
+../ADC_cfg.h:42: error: previous definition of 'CH_4' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_5'
+../ADC_cfg.h:42: error: previous definition of 'CH_5' was here
+../ADC.h:17: error: redeclaration of enumerator 'CH_6'
+../ADC_cfg.h:42: error: previous definition of 'CH_6' was here
+../ADC.c: In function 'ADC_init':
+../ADC.c:15: error: 'ADCSRA' undeclared (first use in this function)
+../ADC.c:15: error: (Each undeclared identifier is reported only once
+../ADC.c:15: error: for each function it appears in.)
+../ADC.c:18: error: 'ADMUX' undeclared (first use in this function)
+../ADC.c:33:2: warning: "/*" within comment
+../ADC.c: In function 'ADC_getDigitalValueSynchNonBlocking':
+../ADC.c:57: error: 'ADMUX' undeclared (first use in this function)
+../ADC.c:61: error: 'ADCSRA' undeclared (first use in this function)
+../ADC.c:70: error: 'ADCH' undeclared (first use in this function)
+../ADC.c:70: error: 'ADCL' undeclared (first use in this function)
+../ADC.c: In function 'ADC_readChannel':
+../ADC.c:75: error: 'ADMUX' undeclared (first use in this function)
+../ADC.c:78: error: 'ADCSRA' undeclared (first use in this function)
+../ADC.c:87: error: 'ADC' undeclared (first use in this function)
+../ADC.c: In function 'ADC_autotrigger_init':
+../ADC.c:93: error: 'ADCSRA' undeclared (first use in this function)
+../ADC.c:96: error: 'ADMUX' undeclared (first use in this function)
+../ADC.c:114: error: 'SFIOR' undeclared (first use in this function)
+../ADC.c: In function 'ADC_autotrigger_readChannel':
+../ADC.c:131: error: 'ADMUX' undeclared (first use in this function)
+../ADC.c:134: error: 'ADCSRA' undeclared (first use in this function)
+../ADC.c:137: error: 'ADC' undeclared (first use in this function)
+make: *** [ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:50:56 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+In file included from ../ADC.c:8:
+../ADC.h:16: error: redeclaration of enumerator 'CH_0'
+../ADC_cfg.h:42: error: previous definition of 'CH_0' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_1'
+../ADC_cfg.h:42: error: previous definition of 'CH_1' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_2'
+../ADC_cfg.h:42: error: previous definition of 'CH_2' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_3'
+../ADC_cfg.h:42: error: previous definition of 'CH_3' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_4'
+../ADC_cfg.h:42: error: previous definition of 'CH_4' was here
+../ADC.h:16: error: redeclaration of enumerator 'CH_5'
+../ADC_cfg.h:42: error: previous definition of 'CH_5' was here
+../ADC.h:17: error: redeclaration of enumerator 'CH_6'
+../ADC_cfg.h:42: error: previous definition of 'CH_6' was here
+../ADC.c:33:2: warning: "/*" within comment
+make: *** [ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:51:43 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:33:2: warning: "/*" within comment
+Finished building: ../ADC.c
+ 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_void_Init':
+../LCD.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:22: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:24: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:26: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendData':
+../LCD.c:60: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendCommand':
+../LCD.c:67: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'H_LCD_void_latchByte':
+../LCD.c:170: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:171: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:172: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:173: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:175: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:177: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:180: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:181: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:182: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:183: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:185: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:187: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../LCD.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:32: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12212 bytes (74.5% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:53:04 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:32: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12198 bytes (74.5% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:54:07 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:32: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12212 bytes (74.5% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:07:29 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_void_Init':
+../LCD.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:22: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:24: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:26: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendData':
+../LCD.c:60: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendCommand':
+../LCD.c:67: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'H_LCD_void_latchByte':
+../LCD.c:170: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:171: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:172: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:173: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:175: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:177: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:180: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:181: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:182: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:183: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:185: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:187: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../LCD.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:32: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:30: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:37: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:44: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12330 bytes (75.3% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (4.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:10:18 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:30: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:37: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:44: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12330 bytes (75.3% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (4.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:10:50 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12330 bytes (75.3% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (4.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:12:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:53: error: expected declaration or statement at end of input
+../main.c:23: warning: unused variable 'temp'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:12:28 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:23: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12184 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:16:40 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12184 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:17:01 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:21: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12184 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:18:48 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:19: error: 'clkWise' undeclared (first use in this function)
+../main.c:19: error: (Each undeclared identifier is reported only once
+../main.c:19: error: for each function it appears in.)
+../main.c:21: warning: unused variable 'temp'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:18:57 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:21: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12184 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:19:06 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:21: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12184 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:22:23 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12172 bytes (74.3% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:30:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12192 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:07 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12192 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:43:20 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:21: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12192 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:45:34 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:21: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12192 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:46:17 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:19: error: 'clkWise' undeclared (first use in this function)
+../main.c:19: error: (Each undeclared identifier is reported only once
+../main.c:19: error: for each function it appears in.)
+../main.c:21: warning: unused variable 'temp'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:46:25 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:21: warning: unused variable 'temp'
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12192 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:48:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:35: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:42: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12338 bytes (75.3% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (4.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:53:17 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GIE_R.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12302 bytes (75.1% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (3.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:54:49 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:33:2: warning: "/*" within comment
+Finished building: ../ADC.c
+ 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+../DC_MOTOR.c: In function 'DcMotor_Init':
+../DC_MOTOR.c:16: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../DC_MOTOR.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_void_Init':
+../LCD.c:19: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:22: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:24: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../LCD.c:26: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendData':
+../LCD.c:60: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'LCD_void_sendCommand':
+../LCD.c:67: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c: In function 'H_LCD_void_latchByte':
+../LCD.c:170: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:171: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:172: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:173: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:175: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:177: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:180: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:181: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:182: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:183: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:185: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../LCD.c:187: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../LCD.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:35: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+../main.c:42: warning: pointer targets in passing argument 1 of 'LCD_void_sendString' differ in signedness
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12270 bytes (74.9% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (3.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:58:00 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_getDigitalValueSynchNonBlocking':
+../ADC.c:36: error: 'counter' undeclared (first use in this function)
+../ADC.c:36: error: (Each undeclared identifier is reported only once
+../ADC.c:36: error: for each function it appears in.)
+make: *** [ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:31 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+Finished building: ../ADC.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12328 bytes (75.2% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (3.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:03:20 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12328 bytes (75.2% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (3.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:07:23 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c: In function 'ADC_getDigitalValueAsynchCallBack':
+../ADC.c:71: error: 'ADC_R_BASE' undeclared (first use in this function)
+../ADC.c:71: error: (Each undeclared identifier is reported only once
+../ADC.c:71: error: for each function it appears in.)
+../ADC.c:71: error: expected identifier before '*' token
+../ADC.c:74: error: expected identifier before '*' token
+../ADC.c:75: error: expected identifier before '*' token
+../ADC.c:78: error: expected identifier before '*' token
+../ADC.c:80: warning: implicit declaration of function 'LCD_void_sendString'
+../ADC.c: At top level:
+../ADC.c:85: warning: return type defaults to 'int'
+../ADC.c: In function 'ISR':
+../ADC.c:85: warning: type of 'ADC_vect' defaults to 'int'
+../ADC.c:88: error: 'ADC_R_BASE' undeclared (first use in this function)
+../ADC.c:88: error: expected identifier before '*' token
+../ADC.c:88: error: expected identifier before '*' token
+../ADC.c:93: warning: control reaches end of non-void function
+make: *** [ADC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:09:11 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:82: warning: return type defaults to 'int'
+../ADC.c: In function 'ISR':
+../ADC.c:82: warning: type of 'ADC_vect' defaults to 'int'
+../ADC.c:87: warning: implicit declaration of function 'LCD_void_sendString'
+../ADC.c:90: warning: control reaches end of non-void function
+Finished building: ../ADC.c
+ 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+./LM35.o: In function `LM35_init':
+../LM35.c:17: undefined reference to `ADC_readChannel'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:09:16 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:82: warning: return type defaults to 'int'
+../ADC.c: In function 'ISR':
+../ADC.c:82: warning: type of 'ADC_vect' defaults to 'int'
+../ADC.c:89: warning: control reaches end of non-void function
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+./LM35.o: In function `LM35_init':
+../LM35.c:17: undefined reference to `ADC_readChannel'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:10:08 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LM35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LM35.d" -MT"LM35.o" -c -o "LM35.o" "../LM35.c"
+../LM35.c: In function 'LM35_getTemperature':
+../LM35.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../LM35.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12082 bytes (73.7% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (5.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:13:21 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:98: warning: return type defaults to 'int'
+../ADC.c: In function 'ISR':
+../ADC.c:98: warning: type of 'ADC_vect' defaults to 'int'
+../ADC.c:105: warning: control reaches end of non-void function
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12204 bytes (74.5% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (5.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:14:28 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:98: warning: return type defaults to 'int'
+../ADC.c: In function 'ISR':
+../ADC.c:98: warning: type of 'ADC_vect' defaults to 'int'
+../ADC.c:105: warning: control reaches end of non-void function
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12184 bytes (74.4% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (5.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:14:57 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+../ADC.c:98: warning: return type defaults to 'int'
+../ADC.c: In function 'ISR':
+../ADC.c:98: warning: type of 'ADC_vect' defaults to 'int'
+../ADC.c:105: warning: control reaches end of non-void function
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12204 bytes (74.5% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (5.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:16:05 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC.d" -MT"ADC.o" -c -o "ADC.o" "../ADC.c"
+Finished building: ../ADC.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./DC_MOTOR.o ./EXTI.o ./GPIO.o ./LCD.o ./LM35.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12110 bytes (73.9% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (5.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

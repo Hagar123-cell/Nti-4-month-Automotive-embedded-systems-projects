@@ -1,0 +1,25 @@
+/*
+ * GPIO.h
+ *
+ *  Created on: Oct 20, 2023
+ *      Author: OMR
+ */
+
+#ifndef GPIO_H_
+#define GPIO_H_
+
+#include"MCU_HW.h"
+
+
+#define OUTPUT  1
+#define INPUT   0
+
+void DIO_voidSetPinDirection(GPIO_REGISTERS* ptr, u8 Copy_u8PinId, u8 Copy_u8Direction);
+void DIO_voidSetPinValue(GPIO_REGISTERS* ptr, u8 Copy_u8PinId, u8 Copy_u8Value);
+u8 DIO_voidGetPinValue(GPIO_REGISTERS* ptr, u8 Copy_u8PinId);
+
+void DIO_voidSetPortDirection(GPIO_REGISTERS*ptr, u8 Copy_u8Direction);
+void DIO_voidSetPortValue(GPIO_REGISTERS* ptr, u8 Copy_u8Value);
+u8 DIO_voidGetPortValue(GPIO_REGISTERS* ptr);
+
+#endif /* GPIO_H_ */

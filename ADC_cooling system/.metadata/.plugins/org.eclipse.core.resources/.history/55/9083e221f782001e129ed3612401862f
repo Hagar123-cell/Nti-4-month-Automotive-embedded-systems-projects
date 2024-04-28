@@ -1,0 +1,62 @@
+/*
+ * ADC_program.c
+ *
+ * Created: 10/23/2023 9:16:25 AM
+ *  Author: OMR
+ */ 
+
+#include "ADC.h"
+#include "ADC_private.h"
+#include "BIT_MATH.h"
+#include"MCU_HW.h"
+void ADC_init(ADC_CFG* cfg)
+{
+	/*disable ADC*/
+	CLEARBIT(ADCSRA,ADEN);
+
+	/*choose VREF & adjustment type*/
+	ADMUX = (cfg->v)<<REFS0 | (cfg->adjust)<<ADLAR;
+
+	/*Select Prescaler & disable ADC interrupt & choose single conversion mode*/
+	ADCSRA = (cfg->pre) | (1<<ADIF);
+
+	/*enable ADC*/
+	SETBIT(ADCSRA,ADEN);
+}
+
+void ADC_getDigitalValueSynchNonBlocking (CHANNEL_NUMBER ch_num, u16* ptr)
+{
+	/*flag to check if time limit exceeded*/
+	static u8 flag=1;
+
+	/*select channel*/
+	ADMUX &= ~(11111<<0);
+	ADMUX |= (ch_num&0x07);
+
+	/*start conversion only if the last conversion completed*/
+	if(flag==1)
+		ADCSRA |= 1<<ADSC;
+
+	u16 counter=0;
+	while(BIT_IS_CLEAR(ADCSRA, ADIF) && counter<= ADC_TIME_LIMIT)
+	{
+		counter++;
+	}
+
+	if(counter> ADC_TIME_LIMIT)
+	{
+		flag=0;
+	}
+
+	/*if conversion is complete clear interrupt flag*/
+	if(BIT_IS_CLEAR(ADCSRA, ADIF))
+	{
+		/*clear flag*/
+		ADCSRA |= (1<<ADIF) ;
+	}
+
+
+	/*read data*/
+	*ptr = (ADCH << 8) | ADCL;
+}
+

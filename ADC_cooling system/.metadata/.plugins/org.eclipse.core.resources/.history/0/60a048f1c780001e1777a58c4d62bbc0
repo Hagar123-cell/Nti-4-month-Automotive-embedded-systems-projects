@@ -1,0 +1,116 @@
+/*
+ * ADC.c
+ *
+ *  Created on: Oct 24, 2023
+ *      Author: OMR
+ */
+
+
+#include "ADC.h"
+#include"MCU_HW.h"
+#include"GPIO.h"
+#include"BIT_MATH.h"
+
+//#include <avr/io.h>
+void(*ADC_ptr_to_callback_fns[8])(u16) = {NULL};
+void ADC_Init(ADC_CFG* cfg)
+{
+	ADCSRA=5;
+	//ADC_R_BASE->ADCSRA.ALL_BITS = cfg->pre|(cfg ->trig << 5)|(ADC_ENABLED<<7);
+#if 0
+	/*disable ADC*/
+	ADC_R_BASE->ADCSRA.bits.bit7 = ADC_DISABLED;
+
+	/*adjust vref*/
+	ADC_R_BASE ->ADMUX.bits.bit6 = READBIT(cfg ->v, 0);
+	ADC_R_BASE ->ADMUX.bits.bit7 = READBIT(cfg ->v, 1);
+
+	/*adjust Right or Left adjust*/
+	ADC_R_BASE ->ADMUX.bits.bit5 = cfg->adjust;
+
+	/*adjust prescaler*/
+	ADC_R_BASE->ADCSRA.bits.bit0 = READBIT(cfg ->pre, 0);
+	ADC_R_BASE->ADCSRA.bits.bit1 = READBIT(cfg ->pre, 1);
+	ADC_R_BASE->ADCSRA.bits.bit2 = READBIT(cfg ->pre, 2);
+
+	/*disable interrupt*/
+	ADC_R_BASE ->ADCSRA.bits.bit3 = INTERRUPT_DISABLE;
+
+	/*adjust auto trigger*/
+	ADC_R_BASE->ADCSRA.bits.bit5 = cfg ->trig;
+
+	/*Clear flag*/
+	ADC_R_BASE ->ADCSRA.bits.bit6 = IF_HIGH;
+
+	/*enable ADC */
+	ADC_R_BASE->ADCSRA.bits.bit7 = ADC_ENABLED;
+#endif
+}
+u16 ADC_getDigitalValueSynchNonBlocking (CHANNEL_NUMBER ch_num)
+{
+
+	u16 result;
+	//static u8 flag = 0;
+	/*select channel*/
+	ADC_R_BASE ->ADMUX.ALL_BITS &= ~(11111<<0);
+	ADC_R_BASE ->ADMUX.ALL_BITS |= (ch_num&0x07);
+
+	/*start conversion*/
+	ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+
+
+	while(ADC_R_BASE ->ADCSRA.bits.bit4 == IF_LOW);
+
+	/*clear flag*/
+	ADC_R_BASE ->ADCSRA.bits.bit4 = IF_HIGH;
+
+	/*read data*/
+	result=(ADC_R_BASE->ADCH.ALL_BITS << 8) | ADC_R_BASE->ADCL.ALL_BITS;
+	/*if(flag == 0)
+	{
+		ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+		flag = 1;
+	}
+	if(ADC_R_BASE ->ADCSRA.bits.bit4 == IF_HIGH)
+	{
+		result=(ADC_R_BASE->ADCH.ALL_BITS << 8) | ADC_R_BASE->ADCL.ALL_BITS;
+		ADC_R_BASE ->ADCSRA.bits.bit4 = IF_LOW;
+		ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+		//flag = 0;
+
+	}*/
+	/*
+	if(flag == CONVERSION_COMPLETE)
+	{
+		 ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+		 flag = 1;
+	}
+	 */
+
+	return result;
+}
+
+void ADC_getDigitalValueAsynchCallBack(CHANNEL_NUMBER ch_num, void(*ptr_to_fn)(u16))
+{
+	/*set call_back*/
+	ADC_ptr_to_callback_fns[ch_num] = ptr_to_fn;
+
+	/*enable interrupt*/
+	ADC_R_BASE ->ADCSRA.bits.bit3 = INTERRUPT_ENABLE;
+
+	/*select channel*/
+	ADC_R_BASE ->ADMUX.ALL_BITS &= ~(1111<<0);
+	ADC_R_BASE ->ADMUX.ALL_BITS |= (ch_num);
+
+	/*start conversion*/
+	ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+}
+
+ISR(ADC_vect)
+{
+	if(ADC_ptr_to_callback_fns[CH_2] != NULL)
+	{
+		ADC_ptr_to_callback_fns[CH_2]((ADC_R_BASE->ADCH.ALL_BITS << 8) | (ADC_R_BASE->ADCL.ALL_BITS));
+	}
+
+}

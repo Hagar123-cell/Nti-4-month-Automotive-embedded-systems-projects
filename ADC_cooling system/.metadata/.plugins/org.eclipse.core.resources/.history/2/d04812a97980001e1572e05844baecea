@@ -1,0 +1,153 @@
+/*
+ * Timer.c
+ *
+ *  Created on: Oct 27, 2023
+ *      Author: OMR
+ */
+
+#include "Timer0.h"
+#include"MCU_HW.h"
+#include"EXTI.h"
+#include"BIT_MATH.h"
+
+static u16 ovf_counts_for_delay_fn;
+static u16 ovf_count;
+static u8 ovf_counts_for_delay_fn_CTC;
+void (*Timer0_callback_fns[2]) (void) = {NULL};
+void Timer0_Init(Timer0_cfg* cfg)
+{
+	/*CHOOSE MODE*/
+	TIMER0_R_BASE->TCCR0.bits.bit6 = READBIT(cfg->mode, 0);
+	TIMER0_R_BASE->TCCR0.bits.bit3 = READBIT(cfg->mode, 1);
+
+	/*set  Force Output Compare*/
+	if(cfg ->mode == T0_CTC || cfg->mode == Normal)
+	{
+		TIMER0_R_BASE ->TCCR0.bits.bit7 = 1;
+	}
+	else
+	{
+		TIMER0_R_BASE ->TCCR0.bits.bit7 = 0;
+	}
+
+	/*Compare Match Output Mode*/
+	TIMER0_R_BASE ->TCCR0.bits.bit4 = READBIT(cfg ->CMP_MODE, 0);
+	TIMER0_R_BASE ->TCCR0.bits.bit5 = READBIT(cfg ->CMP_MODE, 1);
+
+
+	/*select prescaler*/
+	TIMER0_R_BASE->TCCR0.ALL_BITS |= (cfg ->pre & (111<<0));
+
+	ovf_count=0;
+}
+
+void Timer_start(TIMER0_PRESCALER pre)
+{
+	TIMER0_R_BASE->TCCR0.ALL_BITS &= (pre & ~(111<<0));
+
+	TIMER0_R_BASE->TCCR0.ALL_BITS |= (pre & (111<<0));
+	ovf_count=0;
+}
+
+void Timer_stop()
+{
+	TIMER0_R_BASE->TCCR0.ALL_BITS &= ~(111<<0);
+}
+
+u16 Timer_GetCounts()
+{
+	return ovf_count;
+}
+
+u8 ov_flag=0;
+void Timer0_delay(void)
+{
+	static u16 c=0;
+	c++;
+	if (c==ovf_counts_for_delay_fn)
+	{
+		ov_flag=1;
+		c=0;
+	}
+}
+void Timer_setDelayTimeMilliSec(u32 delay_in_ms, Timer0_Mode mode)
+{
+	/*too-much-delay*/
+	Timer_start(TIMER0_R_BASE->TCCR0.ALL_BITS &(111<<0));
+	u32 tick=(TIMER0_R_BASE->TCCR0.ALL_BITS &(111<<0))/FCPU;
+	u32 needded_ticks=(u32)(delay_in_ms *1000)/tick;
+
+	ovf_counts_for_delay_fn=needded_ticks/256;
+	u32 OVF_Rem=needded_ticks%256;
+	if (OVF_Rem !=0)
+	{
+		ovf_counts_for_delay_fn++;
+		TIMER0_R_BASE->TCNT0.ALL_BITS =256-OVF_Rem;
+	}
+	setCallBack(Timer0_delay, Normal);
+	while(ov_flag==0);
+	ov_flag=0;
+}
+
+void EnableInt(Timer0_Mode mode)
+{
+	if(mode == Normal)
+		TIMER0_R_BASE->TIMSK.ALL_BITS |= 1<<0;
+
+	else if(mode == T0_CTC)
+		TIMER0_R_BASE->TIMSK.ALL_BITS |= 1<<1;
+
+}
+void DisableInt(Timer0_Mode mode)
+{
+	if(mode == Normal)
+		TIMER0_R_BASE->TIMSK.ALL_BITS &= ~(1<<0);
+
+	else if(mode == T0_CTC)
+		TIMER0_R_BASE->TIMSK.ALL_BITS &= ~(1<<1);
+}
+void setCallBack(void (*ptr_to_callback)(void), modes_IDs mode_id)
+{
+	Timer0_callback_fns[mode_id] = ptr_to_callback;
+}
+
+void setFastPWM(u8 duty)
+{
+	if(TIMER0_R_BASE->TCCR0.ALL_BITS & (11<<4) == NON_INVERTING)
+	{
+		TIMER0_R_BASE ->OCR0.ALL_BITS = (u8)(duty * MAX_OCR0);
+	}
+	else if(TIMER0_R_BASE->TCCR0.ALL_BITS & (11<<4) == INVERTING)
+	{
+		TIMER0_R_BASE ->OCR0.ALL_BITS = (u8)(MAX_OCR0-(duty * MAX_OCR0));
+	}
+}
+void setphaseCorrectPWM(u8 duty)
+{
+	if(TIMER0_R_BASE->TCCR0.ALL_BITS & (11<<4) == NON_INVERTING)
+	{
+		TIMER0_R_BASE ->OCR0.ALL_BITS = duty * MAX_OCR0;
+	}
+	else if(TIMER0_R_BASE->TCCR0.ALL_BITS & (11<<4) == INVERTING)
+	{
+		TIMER0_R_BASE ->OCR0.ALL_BITS = MAX_OCR0-(duty * MAX_OCR0);
+	}
+}
+
+ISR(TIMER0_OVF_vect)
+{
+
+	ovf_count++; //for get_count fn
+
+	if(Timer0_callback_fns[Normal_ID] != NULL)
+		Timer0_callback_fns[Normal_ID]();
+
+}
+
+ISR(TIMER0_OC_vect)
+{
+	if(Timer0_callback_fns[CTC_ID] != NULL)
+		Timer0_callback_fns[CTC_ID]();
+
+
+}

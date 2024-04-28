@@ -1,0 +1,44 @@
+#include"LED.h"
+#include"GPIO.h"
+#include"MCU_HW.h"
+#include<util/delay.h>
+#include"PUSH_BUTTON.h"
+#include"GIE_R.h"
+#include"Timer0.h"
+#include"smallOS.h"
+
+
+int main()
+{
+	/*CONFIGURE RED LED PIN AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_B, 0, OUTPUT);
+
+	/*CONFIGURE BLUE LED PIN AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_B, 2, OUTPUT);
+
+	/*CONFIGURE GREEN LED PIN AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_D, 0, OUTPUT);
+
+   /*configure push button as input*/
+	DIO_voidSetPinDirection(PERIPHRAL_C, 7, INPUT);
+
+	DIO_voidSetPinValue(PERIPHRAL_B, 0, LOGIC_LOW);
+
+	DIO_voidSetPinValue(PERIPHRAL_C, 0, LOGIC_LOW);
+
+	DIO_voidSetPinValue(PERIPHRAL_D, 0, LOGIC_LOW);
+
+	/*internal pullup*/
+	//DIO_voidSetPinValue(PERIPHRAL_C, 7, LOGIC_HIGH);
+
+	Timer0_cfg cfg = {Normal, PRE1024, OC0_DISCON};
+	Timer0_Init(&cfg);
+	setCallBack(sechulder,Normal_ID);
+	EnableInt(Normal);
+	GIE_enableGlobalInterrupt();
+
+	while(1)
+	{
+
+	}
+}

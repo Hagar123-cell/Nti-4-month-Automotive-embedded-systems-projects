@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;AVR_INTERFACING/ADC_interface.h&apos; to &apos;ADC.h&apos;" description="Rename resource &apos;ADC_interface.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ADC_interface.h" name="ADC.h" stamp="1699961069075" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;AVR_INTERFACING/ADC_program.c&apos; to &apos;ADC.c&apos;" description="Rename resource &apos;ADC_program.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ADC_program.c" name="ADC.c" stamp="1699961078919" updateReferences="true"/>
+</session>

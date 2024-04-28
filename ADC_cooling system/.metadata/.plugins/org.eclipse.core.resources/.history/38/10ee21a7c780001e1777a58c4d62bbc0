@@ -1,0 +1,130 @@
+	/*
+ * MCU_HW.h
+ *
+ *  Created on: Oct 22, 2023
+ *      Author: OMR
+ */
+
+#ifndef MCU_HW_H_
+#define MCU_HW_H_
+
+#include"STDTYPES.h"
+
+
+typedef union
+{
+	u8 ALL_BITS;
+	struct
+	{
+		u8 bit0:1;
+		u8 bit1:1;
+		u8 bit2:1;
+		u8 bit3:1;
+		u8 bit4:1;
+		u8 bit5:1;
+		u8 bit6:1;
+		u8 bit7:1;
+	}bits;
+}BITS;
+
+/**************************************SREG*****************************************************************/
+#define SREG  ((volatile BITS*)0x5F)
+/***************************************GPIO_REGISTERS******************************************************/
+typedef struct
+{
+	BITS PIN_R;
+	BITS direction;
+	BITS PORT_R;
+}GPIO_REGISTERS;
+
+#define  PERIPHRAL_A  ((volatile GPIO_REGISTERS*)0x39)
+#define  PERIPHRAL_B  ((volatile GPIO_REGISTERS*)0x36)
+#define  PERIPHRAL_C  ((volatile GPIO_REGISTERS*)0x33)
+#define  PERIPHRAL_D  ((volatile GPIO_REGISTERS*)0x30)
+
+/***************************************EXTI_REGISTERS******************************************************/
+typedef struct
+{
+	BITS MCUCSR;
+	BITS MCUCR;
+	BITS RESERVED[4];
+	BITS GIFR;
+	BITS GICR;
+}EXTI_REGISTERS;
+
+#define EXTI_R ((volatile EXTI_REGISTERS*) 0x54)
+
+/***************************************ADC_REGISTERS******************************************************/
+typedef struct
+{
+	BITS ADCL;
+	BITS ADCH;
+	BITS ADCSRA;
+	BITS ADMUX;
+	//BITS RESERVED[41];
+	//BITS SFIOR;
+}ADC_REGISTERS;
+
+#define ADC_R_BASE ((volatile ADC_REGISTERS*) 0x24)
+#define ACSRA *((volatile BITS*) 0x26)
+/***************************************TIMER0_REGISTERS******************************************************/
+typedef struct
+{
+    BITS TCNT0;
+    BITS TCCR0;
+    BITS RESERVED1[4];
+    BITS TIFR;
+    BITS TIMSK;
+    BITS RESERVED2[2];
+    BITS OCR0;
+}TIMER0_REGISTERS;
+
+#define TIMER0_R_BASE  ((volatile TIMER0_REGISTERS*) 0x52)
+
+
+/***************************************UART******************************************************/
+#define UBRRL *((volatile u8*) 0x29)
+#define UCSRB *((volatile u8*) 0x2A)
+#define UCSRA *((volatile u8*) 0x2B)
+#define UDR *((volatile u8*) 0x2C)
+#define UCSRC *((volatile u8*) 0x40)
+#define UBRRH *((volatile u8*) 0x40)
+
+
+/***************************************SPI******************************************************/
+typedef struct
+{
+	BITS SPCR;
+	BITS SPSR;
+	BITS SPDR;
+}SPI_REGISTERS;
+
+#define SPI_REGISTERS ((volatile SPI_REGISTERS*)0x2D)
+
+/***************************************I2C******************************************************/
+
+#define TWBR          *((volatile u8*)0x20)
+#define TWSR          *((volatile u8*)0x21)
+#define TWAR          *((volatile u8*)0x22)
+#define TWDR          *((volatile u8*)0x23)
+#define TWCR          *((volatile u8*)0x56)
+
+
+/***************************************RTC******************************************************/
+typedef struct
+{
+	BITS SECONDS;
+	BITS MINUTES;
+	BITS HOURS;
+	BITS DAY;
+	BITS DATE;
+	BITS MONTH;
+	BITS YEAR;
+	BITS CONTROL;
+}RTC_REGISTERS;
+
+#define RTC_R_BASE  ((volatile RTC_REGISTERS*) 0x00)
+
+/***************************************WDT******************************************************/
+#define WDTCR      *((volatile u8*) 0x41)
+#endif /* MCU_HW_H_ */

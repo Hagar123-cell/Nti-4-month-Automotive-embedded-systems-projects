@@ -1,0 +1,319 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 20, 2023
+ *      Author: hagar ahmed
+ */
+
+#include"GPIO.h"
+#include"SevenSegment.h"
+#include"KEYBAD.h"
+#include<util/delay.h>
+#include"ADC.h"
+#include"LCD.h"
+#include"LCD_priv.h"
+#include"EXTI.h"
+#include"GIE_R.h"
+#include"Timer0.h"
+#include"Timer1.h"
+
+#include"UART.h"
+#include"SPI.h"
+#include"EEPROM.h"
+#include"RTC.h"
+#include"I2C.h"
+#include"WDT.h"
+
+void DIO_Toggle_pin(GPIO_REGISTERS *ptr,unsigned char p)
+{
+	u8 val=DIO_voidGetPinValue(ptr,p);
+	if (val==1)
+	DIO_voidSetPinValue(ptr,p,0);
+	else
+	DIO_voidSetPinValue(ptr,p,1);
+}
+
+
+void toggleBlueLed()
+{
+	PERIPHRAL_A->PORT_R.bits.bit5 ^= (1<<5);
+
+}
+#if 0
+int main()
+{
+	/* WDT test*/
+	DIO_voidSetPinDirection(PERIPHRAL_B, 7, 1);
+	DIO_voidSetPinDirection(PERIPHRAL_A, 5, 1);
+
+	DIO_Toggle_pin(PERIPHRAL_B, 7);
+
+	WDT_sleep(7);
+
+	WDT_enable();
+	while(1)
+	{
+
+		DIO_Toggle_pin(PERIPHRAL_A, 5);
+		_delay_ms(10000);
+
+		WDT_refresh();
+	}
+}
+#endif
+#if 0/*RTC TEST*/
+int main()
+{
+	RTC_init();
+	RTC_time t = {2, 50, 3, NON};
+	RTC_setTime(&t);
+	while(1)
+	{
+	}
+
+}
+#endif
+
+#if 0 //UART TEST
+u8 recievedByte;
+void UART_recieve(u8* recieved)
+{
+	recievedByte=*recieved;
+	//LCD_void_sendData('j');
+}
+int main()
+{
+	DIO_voidSetPinDirection(PERIPHRAL_D, 0, 0); /*RECIEVER*/
+	DIO_voidSetPinDirection(PERIPHRAL_D, 1, 1); /*TRANSMITTER*/
+	//DIO_voidSetPinDirection(PERIPHRAL_A, 0, 1);
+	UART_init();
+	LCD_void_Init();
+	//	LCD_void_sendData('j');
+
+	GIE_enableGlobalInterrupt();
+	UART_enableRecieve_Inturrpt();
+	//LCD_void_sendData('a');
+
+	UART_receiveByteAsynchCallBack(UART_recieve);
+
+	UART_sendByte('a');
+
+	_delay_ms(1);
+	LCD_void_sendData(recievedByte);
+
+	u8 str[10]="hagar";
+	//UART_sendString(str);
+	u8 ptr[10];
+	///UART_recieveString(ptr);
+	//LCD_void_sendString(ptr);
+	/*u8 i=0;
+		while(ptr[i] != '\0')
+		{
+		LCD_void_sendData(ptr[i]);
+		i++;
+		}*/
+	while(1)
+	{
+	}
+}
+#endif
+
+#if 0
+int main()
+{
+
+	DIO_voidSetPinDirection(PERIPHRAL_B, 4, 1);
+	DIO_voidSetPinDirection(PERIPHRAL_B, 5, 1);
+	DIO_voidSetPinDirection(PERIPHRAL_B, 6, 0);
+	DIO_voidSetPinDirection(PERIPHRAL_B, 7, 1);
+
+
+	//GIE_enableGlobalInterrupt();
+	//SPI_TEST
+	SPI_CFG cfg = {MSB, IDLE_LOW, SAMPLE_FIRST, DIV_4, MCU_MASTER, NORMALSPEED};
+	SPI_init(&cfg);
+
+	u8 WRITE_DATA = 'H';
+	u8 READ_data;
+//	DIO_voidSetPinDirection(PERIPHRAL_A, 1, 1);
+	SPI_transfer(WRITE_DATA, &READ_data);
+	//SPI_sendNoBlock('A');
+
+/*	_delay_ms(1);
+	if(SPI_receiveNoBlock() == 'A')
+	{
+		DIO_voidSetPinValue(PERIPHRAL_A, 1, 1);
+	}
+	//	SPI_ascynchSetCallBack(led_ON);
+*/
+	LCD_void_Init();
+	LCD_void_sendData(READ_data);
+
+while(1)
+{
+}
+
+	//DIO_voidSetPinDirection(PERIPHRAL_D, 0, 0); /*RECIEVER*/
+	//DIO_voidSetPinDirection(PERIPHRAL_D, 1, 1); /*TRANSMITTER*/
+	//DIO_voidSetPinDirection(PERIPHRAL_A, 0, 1);
+	//UART_init();
+	//LCD_void_Init();
+	//LCD_void_sendData('a');
+	//UART_sendByte('a');
+	//UART_recieveByte();
+	//LCD_void_sendData(UART_recieved_bytes[0]);
+
+	//u8 val = 0;
+
+	/* Initialize the TWI/I2C Driver */
+	//TWI_init();
+}
+#endif
+#if 0
+int main()
+{
+
+
+		u8 data;
+		LCD_void_Init();
+
+		EEPROM_init();
+		EEPROM_WriteByte(0x88, 0x41);
+		_delay_ms(1000);
+		EEPROM_ReadByte(0x88,&data);
+
+
+		LCD_void_sendIntNum(data);
+		while (1)
+		{
+		}
+
+}
+#endif
+#if 0
+int main()
+{
+
+	/*I2C*/
+	DIO_voidSetPinDirection(PERIPHRAL_C,0,1);
+	DIO_voidSetPinDirection(PERIPHRAL_C,1,1);
+
+	I2C_init(_100kbps_bitRate);
+
+	I2C_sendByte('A');
+	_delay_ms(1);
+
+
+	u8 recieved_byte;
+	I2C_receiveByte_NoACK(&recieved_byte);
+	_delay_ms(1);
+	DIO_voidSetPinDirection(PERIPHRAL_A,0,1);
+
+	if(recieved_byte == 'A')
+		DIO_voidSetPinValue(PERIPHRAL_A, 0, 1);
+
+	while(1)
+	{
+	//	DIO_voidSetPortValue(PERIPHRAL_D,val); /* out the read value from the external EEPROM */
+	}
+
+}
+
+#endif
+
+#if 0 /*timer1 test*/
+int main()
+{
+	Timer1_cfg cfg = {T1_CTC, PRE1024, T1_OC1_DISCON, T1_OC1_DISCON};
+	Timer1_Init(&cfg);
+	GIE_enableGlobalInterrupt();
+	Timer1_EnableInt(T1_OVF);
+	//LCD_void_Init();
+
+	//	_delay_ms(1);
+	//LCD_void_sendIntNum( Timer_GetCounts());
+
+
+
+	DIO_voidSetPinDirection(PERIPHRAL_A, 5, 1);
+	DIO_voidSetPinDirection(PERIPHRAL_A, 6, 1);
+	TIMER1_R_BASE ->OCR1AL.ALL_BITS = 200;
+
+	Timer1_setCallBack(led_ON, T1_CMP_A);
+	//TIMER0_R_BASE ->OCR0.ALL_BITS = 200;
+	while(1)
+	{
+
+		/*
+		DIO_voidSetPinValue(PERIPHRAL_A, 6, 1);
+		Timer1_setDelayTimeMilliSec((u32)5000, Normal);
+		DIO_voidSetPinValue(PERIPHRAL_A, 5, 1);
+		Timer1_setDelayTimeMilliSec((u32)5000, Normal);
+		 */
+	}
+}
+
+#endif
+
+
+#if 0  /*Timer0 test*/
+int main()
+{
+	Timer0_cfg cfg = {Normal, PRE1024, OC0_DISCON};
+	Timer0_Init(&cfg);
+	GIE_enableGlobalInterrupt();
+	EnableInt(Normal);
+	//LCD_void_Init();
+
+	//	_delay_ms(1);
+	//LCD_void_sendIntNum( Timer_GetCounts());
+
+
+
+	DIO_voidSetPinDirection(PERIPHRAL_A, 5, 1);
+	DIO_voidSetPinDirection(PERIPHRAL_A, 6, 1);
+
+	//setCallBack(led_ON, Normal_ID);
+	TIMER0_R_BASE ->OCR0.ALL_BITS = 200;
+	while(1)
+	{
+
+
+		DIO_voidSetPinValue(PERIPHRAL_A, 6, 1);
+		Timer_setDelayTimeMilliSec((u32)100000, Normal);
+		DIO_voidSetPinValue(PERIPHRAL_A, 5, 1);
+		Timer_setDelayTimeMilliSec((u32)100000, Normal);
+
+	}
+}
+#endif
+
+
+
+
+int main(void)
+{
+
+
+	DIO_voidSetPinDirection(PERIPHRAL_A,0,0);
+	ADC_CFG cfg ;
+	cfg .adjust = RIGHT_ADJUST;
+	cfg .pre = PRE_128;
+	cfg .trig = SINGLE_CONVERSION;
+	cfg .v = AVCC;
+
+	LCD_void_Init();
+	ADC_Init(&cfg);
+	u16 read;
+	while(1)
+	{
+	read=ADC_getDigitalValueSynchNonBlocking(CH_1);
+	LCD_void_sendCommand(LCD_CLEAR);
+	//_delay_ms(5);
+	LCD_void_sendIntNum((s32)read);
+	_delay_ms(5);
+
+	//GIE_enableGlobalInterrupt();
+	}
+
+}

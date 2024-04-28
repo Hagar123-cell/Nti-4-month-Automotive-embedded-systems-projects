@@ -1,0 +1,37 @@
+#include"LED.h"
+#include"GPIO.h"
+#include"MCU_HW.h"
+#include<util/delay.h>
+#include"PUSH_BUTTON.h"
+#include"GIE_R.h"
+#include"Timer0.h"
+#include"smallOS.h"
+
+
+int main()
+{
+	/*CONFIGURE RED LED PIN AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_B, 0, OUTPUT);
+
+	/*CONFIGURE BLUE LED PIN AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_C, 0, OUTPUT);
+
+	/*CONFIGURE GREEN LED PIN AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_D, 0, OUTPUT);
+
+   /*configure push button as input*/
+	DIO_voidSetPinDirection(PERIPHRAL_C, 7, INPUT);
+	/*set initial value for tcnt0 to make 500msec osTick*/
+	//	Timer_setTCNT0Value(133);
+
+	Timer0_cfg cfg = {Normal, PRE1024, OC0_DISCON};
+	Timer0_Init(&cfg);
+	setCallBack(sechulder,Normal_ID);
+	EnableInt(Normal);
+	GIE_enableGlobalInterrupt();
+
+	while(1)
+	{
+
+	}
+}

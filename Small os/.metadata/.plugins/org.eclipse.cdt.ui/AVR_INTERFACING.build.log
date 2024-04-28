@@ -1,0 +1,48 @@
+12:12:57 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:51: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7854 bytes (47.9% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:12:59 Build Finished. 0 errors, 6 warnings. (took 2s.743ms)
+

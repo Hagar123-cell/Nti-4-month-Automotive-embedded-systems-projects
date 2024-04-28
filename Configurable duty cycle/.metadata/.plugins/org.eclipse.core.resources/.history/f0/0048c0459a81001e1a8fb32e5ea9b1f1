@@ -1,0 +1,39 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 20, 2023
+ *      Author: hagar ahmed
+ */
+
+
+#include"LCD.h"
+#include"KEYBAD.h"
+#include"DC_MOTOR.h"
+
+int main()
+{
+	LCD_void_Init();
+	Keybad_init();
+	DcMotor_Init();
+	u8 pressed_key=0;
+	LCD_void_sendString("enter duty cycle: ");
+
+	LCD_void_sendIntNum(Keybad_getValue());
+	while(1)
+	{/*
+		LCD_void_sendString("enter duty cycle: ");
+
+		for(u8 i=0; i<2; i++)
+		{
+			pressed_key = (pressed_key*10) + (Keybad_getValue()-'0');
+		}
+
+		LCD_void_sendIntNum(pressed_key);
+		DC_MOTOR_setSpeed(pressed_key, clkWise);
+
+		LCD_void_gotoXY(0, 0);
+			*/
+
+	}
+
+}

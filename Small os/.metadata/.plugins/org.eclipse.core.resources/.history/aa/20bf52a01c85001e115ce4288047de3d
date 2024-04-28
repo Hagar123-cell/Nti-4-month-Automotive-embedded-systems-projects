@@ -1,0 +1,17 @@
+/*
+ * PUSH_BUTTON.c
+ *
+ *  Created on: Nov 17, 2023
+ *      Author: OMR
+ */
+
+#include"PUSH_BUTTON.h"
+#include"MCU_HW.h"
+
+
+PB_state PB_getButtonState(GPIO_REGISTERS* buttonPort, u8 buttonPin)
+{
+	buttonPort->PORT_R.bits.buttonPin=0;
+
+}
+

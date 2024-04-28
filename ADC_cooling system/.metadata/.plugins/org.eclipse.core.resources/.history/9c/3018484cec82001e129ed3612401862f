@@ -1,0 +1,167 @@
+/*
+ * ADC_program.c
+ *
+ * Created: 10/23/2023 9:16:25 AM
+ *  Author: OMR
+ */ 
+
+#include "ADC.h"
+#include "ADC_private.h"
+#include "BIT_MATH.h"
+#include"ADC_private.h"
+void ADC_init(ADC_CFG* cfg)
+{
+	/*disable ADC*/
+	CLEARBIT(ADCSRA,ADEN);
+	
+	/*choose VREF & adjustment type*/
+	ADMUX = (cfg->v)<<REFS0 | (cfg->adjust)<<ADLAR;
+	//SETBIT(ADMUX,REFS0);
+	//CLEARBIT(ADMUX,REFS1);
+	
+	/*Right adjustment*/
+	//CLEARBIT(ADMUX,REFS1);
+
+	/*Select Prescaler & disable ADC interrupt & choose single conversion mode*/
+	ADCSRA = (cfg->pre) | (1<<ADIF);
+	
+#if 0
+	/*SETBIT(ADCSRA,ADPS0);
+	SETBIT(ADCSRA,ADPS1);
+	SETBIT(ADCSRA,ADPS2);
+	
+	/*Disable ADC Interrupts*/
+	CLEARBIT(ADCSRA,ADIE);
+	
+	/*disable auto triggering*/
+	CLEARBIT(ADCSRA,ADATE);
+	
+	/*clear the source of auto triggering*/
+	CLEARBIT(SFIOR,ADTS0);
+	CLEARBIT(SFIOR,ADTS1);
+	CLEARBIT(SFIOR,ADTS2);
+		//
+	///*clear start conversion*/
+	//CLEAR_BIT(ADCSRA,ADSC);
+	
+	/*Clear flag*/
+	SETBIT(ADCSRA,ADIF);
+#endif
+	/*enable ADC*/
+	SETBIT(ADCSRA,ADEN);
+}
+
+void ADC_getDigitalValueSynchNonBlocking (CHANNEL_NUMBER ch_num, u16* ptr)
+{
+
+	//static u8 flag = 0;
+	/*select channel*/
+	ADMUX &= ~(11111<<0);
+	ADMUX |= (ch_num&0x07);
+
+	/*start conversion*/
+	ADCSRA |= 1<<ADSC;
+
+
+	while(BIT_IS_CLEAR(ADCSRA, ADIF));
+
+	/*clear flag*/
+	ADCSRA |= (1<<ADIF) ;
+
+	/*read data*/
+	result=(ADC_R_BASE->ADCH.ALL_BITS << 8) | ADC_R_BASE->ADCL.ALL_BITS;
+	/*if(flag == 0)
+	{
+		ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+		flag = 1;
+	}
+	if(ADC_R_BASE ->ADCSRA.bits.bit4 == IF_HIGH)
+	{
+		result=(ADC_R_BASE->ADCH.ALL_BITS << 8) | ADC_R_BASE->ADCL.ALL_BITS;
+		ADC_R_BASE ->ADCSRA.bits.bit4 = IF_LOW;
+		ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+		//flag = 0;
+
+	}*/
+	/*
+	if(flag == CONVERSION_COMPLETE)
+	{
+		 ADC_R_BASE ->ADCSRA.bits.bit6 = START_CONVERSION;
+		 flag = 1;
+	}
+	 */
+
+	return result;
+}
+void ADC_readChannel(u8 CH_num, u16* ptr)
+{
+	/*initialize channel to 0*/
+	ADMUX |= ((ADMUX & 0xE0) | (CH_num & 0x07)); 
+	
+	/*Start Conversion*/
+	SETBIT(ADCSRA,ADSC);
+		
+	/*wait for flag*/
+	while(BIT_IS_CLEAR(ADCSRA,ADIF));
+		
+	/*clear flag*/
+	SETBIT(ADCSRA,ADIF);
+	
+	/*save the data*/
+	*ptr = ADC;
+}
+
+void ADC_autotrigger_init(void)
+{
+	/*disable ADC*/
+	CLEARBIT(ADCSRA,ADEN);
+	
+	/*use AVCC*/
+	SETBIT(ADMUX,REFS0);
+	CLEARBIT(ADMUX,REFS1);
+	
+	/*Right adjustment*/
+	CLEARBIT(ADMUX,REFS1);
+	
+	/*Select Prescaler 128*/
+	SETBIT(ADCSRA,ADPS0);
+	SETBIT(ADCSRA,ADPS1);
+	SETBIT(ADCSRA,ADPS2);
+	
+	/*Disable ADC Interrupts*/
+	CLEARBIT(ADCSRA,ADIE);
+	
+	/*enable auto triggering*/
+	SETBIT(ADCSRA,ADATE);
+	
+	/*specify the source of auto triggering*/
+	CLEARBIT(SFIOR,ADTS0);
+	SETBIT(SFIOR,ADTS1);
+	CLEARBIT(SFIOR,ADTS2);
+	
+	/*clear start conversion*/
+	CLEARBIT(ADCSRA,ADSC);
+	
+	/*Clear flag*/
+	SETBIT(ADCSRA,ADIF);
+	
+	/*enable ADC*/
+	SETBIT(ADCSRA,ADEN);
+}
+
+void ADC_autotrigger_readChannel(u8 CH_num, u16* ptr)
+{
+	/*initialize channel to 0*/
+	ADMUX |= ((ADMUX & 0xE0) | (CH_num & 0x07));
+		
+	/*wait for flag*/
+	while(BIT_IS_CLEAR(ADCSRA,ADIF));
+	
+	/*save the data*/
+	*ptr = ADC;
+	
+	/*clear flag*/
+	SETBIT(ADCSRA,ADIF);
+
+}
+

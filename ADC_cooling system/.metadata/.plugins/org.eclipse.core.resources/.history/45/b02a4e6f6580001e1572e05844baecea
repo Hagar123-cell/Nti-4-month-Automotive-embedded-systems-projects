@@ -1,0 +1,48 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 9, 2023
+ *      Author: OMR
+ */
+
+#include"DC_MOTOR.h"
+#include"LCD.h"
+#include"LM35.h"
+
+
+int main()
+{
+
+#if 0
+	DcMotor_Init();
+	LCD_init();
+	u8 temp;
+	while(1)
+	{
+		temp=LM35_getTemperature();
+		if( temp < 25)
+		{
+			DC_MOTOR_setSpeed(stop, 0);
+			LCD_void_sendString("temp = ");
+			LCD_void_sendIntNum((u8)temp);
+		}
+
+		if( temp >= 25 && temp <= 35)
+		{
+			DC_MOTOR_setSpeed(clkWise, 0.5);
+			LCD_void_sendString("temp = ");
+			LCD_void_sendIntNum((u8)temp);
+		}
+
+		if( temp > 35)
+		{
+			DC_MOTOR_setSpeed(clkWise, 0.8);
+			LCD_void_sendString("temp = ");
+			LCD_void_sendIntNum((u8)temp);
+		}
+
+
+		LCD_void_sendData('c');
+	}
+#endif
+}

@@ -1,0 +1,30 @@
+/*
+ * DC_MOTOR.c
+ *
+ *  Created on: Nov 9, 2023
+ *      Author: OMR
+ */
+
+
+#include"DC_MOTOR.h"
+#include"Timer0.h"
+#include"GPIO.h"
+#include"BIT_MATH.h"
+void DcMotor_Init(void)
+{
+	/*SET ENABLE PIN(OC0) AS OUTPUT*/
+	DIO_voidSetPinDirection(PERIPHRAL_B, 3, OUTPUT);
+
+	/*init timer0*/
+	Timer0_cfg cfg = {PWM_fast, PRE8, NON_INVERTING};
+	Timer0_Init(& cfg);
+
+
+}
+void DC_MOTOR_setSpeed(s32 duty)
+{
+
+	/*send the required speed to pwm to generate the wave on the enable pin of the motor*/
+	setFastPWM( duty);
+
+}

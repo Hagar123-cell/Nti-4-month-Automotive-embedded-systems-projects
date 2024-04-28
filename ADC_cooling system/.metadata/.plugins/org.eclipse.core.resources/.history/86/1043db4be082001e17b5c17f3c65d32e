@@ -1,0 +1,30 @@
+/*
+ * ADC.h
+ *
+ *  Created on: Oct 24, 2023
+ *      Author: OMR
+ */
+
+#ifndef ADC_H_
+#define ADC_H_
+
+#include"STDTYPES.h"
+#include"ADC_cfg.h"
+
+#define START_CONVERSION 1
+#define STOP_CONVERSION 0
+
+#define INTERRUPT_ENABLE 1
+#define INTERRUPT_DISABLE 0
+
+#define IF_HIGH 1
+#define IF_LOW 0
+
+#define ADC_DISABLED 0
+#define ADC_ENABLED  1
+
+void ADC_Init(ADC_CFG* cfg) ;
+u16 ADC_getDigitalValueSynchNonBlocking (CHANNEL_NUMBER ch_num);
+void ADC_getDigitalValueAsynchCallBack(CHANNEL_NUMBER ch_num, void(*ptr_to_fn)(u16));
+
+#endif /* ADC_H_ */

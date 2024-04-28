@@ -1,0 +1,88 @@
+/*
+ * ADC_program.c
+ *
+ * Created: 10/23/2023 9:16:25 AM
+ *  Author: OMR
+ */ 
+
+#include "ADC.h"
+#include "ADC_private.h"
+#include "BIT_MATH.h"
+#include"MCU_HW.h"
+#include"EXTI.h"
+void(*ADC_ptr_to_callback_fns[8])(u16) = {NULL};
+
+void ADC_init(ADC_CFG* cfg)
+{
+	/*disable ADC*/
+	CLEARBIT(ADCSRA,ADEN);
+
+	/*choose VREF & adjustment type*/
+	ADMUX = (cfg->v)<<REFS0 | (cfg->adjust)<<ADLAR;
+
+	/*Select Prescaler & disable ADC interrupt & choose single conversion mode*/
+	ADCSRA = (cfg->pre) | (1<<ADIF);
+
+	/*enable ADC*/
+	SETBIT(ADCSRA,ADEN);
+}
+
+void ADC_getDigitalValueSynchNonBlocking (CHANNEL_NUMBER ch_num, u16* ptr)
+{
+	/*flag to check if time limit exceeded*/
+	static u8 flag=1;
+
+	/*select channel*/
+	ADMUX |= ((ADMUX & 0xE0) | (ch_num & 0x07));
+
+
+	/*start conversion only if the last conversion completed*/
+	if(flag==1)
+		ADCSRA |= 1<<ADSC;
+
+	u16 counter=0;
+	while(BIT_IS_CLEAR(ADCSRA, ADIF) && counter<= ADC_TIME_LIMIT)
+	{
+		counter++;
+	}
+
+	if(counter> ADC_TIME_LIMIT)
+	{
+		flag=0;
+	}
+
+	/*if conversion is complete clear interrupt flag*/
+	if(BIT_IS_CLEAR(ADCSRA, ADIF))
+	{
+		/*clear flag*/
+		ADCSRA |= (1<<ADIF) ;
+	}
+
+
+	/*read data*/
+	*ptr = ADC;
+}
+void ADC_getDigitalValueAsynchCallBack(CHANNEL_NUMBER ch_num, void(*ptr_to_fn)(u16))
+{
+	/*set call_back*/
+	ADC_ptr_to_callback_fns[ch_num] = ptr_to_fn;
+
+	/*enable interrupt*/
+	ADCSRA |= (INTERRUPT_ENABLE<<3);
+
+	/*select channel*/
+	ADMUX &= ~(1111<<0);
+	ADMUX |= (ch_num);
+
+	/*start conversion*/
+	ADCSRA |= 1<<ADSC;
+}
+
+ISR(ADC_vect)
+{
+	if(ADC_ptr_to_callback_fns[CH_2] != NULL)
+	{
+		ADC_ptr_to_callback_fns[CH_2]((ADCH << 8) | (ADCL));
+	}
+
+}

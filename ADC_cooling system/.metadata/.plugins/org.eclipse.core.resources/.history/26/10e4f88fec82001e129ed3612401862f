@@ -1,0 +1,31 @@
+/*
+ * ADC_interface.h
+ *
+ * Created: 10/23/2023 9:16:40 AM
+ *  Author: OMR
+ */ 
+
+
+#ifndef ADC_H_
+#define ADC_H_
+
+#include "STDTYPES.h"
+#include"ADC_cfg.h"
+
+typedef enum{
+	CH_0,CH_1,CH_2,CH_3,CH_4,CH_5,CH_6
+}Channel_num;
+
+void ADC_init(ADC_CFG* cfg);
+
+void ADC_getDigitalValueSynchNonBlocking (CHANNEL_NUMBER ch_num, u16* ptr);
+
+void ADC_readChannel(u8 CH_num, u16* ptr);
+
+void ADC_autotrigger_init(void);
+
+void ADC_autotrigger_readChannel(u8 CH_num, u16* ptr);
+
+
+
+#endif /* ADC_H_ */

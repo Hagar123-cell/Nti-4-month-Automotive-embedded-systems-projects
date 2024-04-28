@@ -1,0 +1,2890 @@
+09:35:07 **** Clean-only build of configuration Debug for project AVR_INTERFACING ****
+make clean 
+rm -rf  AVR_INTERFACING.hex  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC.o ./EEPROM.o ./EXTI.o ./GIE_R.o ./GPIO.o ./I2C.o ./KEYBAD.o ./LCD.o ./RTC.o ./SPI.o ./SevenSegment.o ./Timer0.o ./Timer1.o ./UART.o ./WDT.o ./main.o  sizedummy  AVR_INTERFACING.lss  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./ADC.d ./EEPROM.d ./EXTI.d ./GIE_R.d ./GPIO.d ./I2C.d ./KEYBAD.d ./LCD.d ./RTC.d ./SPI.d ./SevenSegment.d ./Timer0.d ./Timer1.d ./UART.d ./WDT.d ./main.d  AVR_INTERFACING.elf
+ 
+09:35:10 **** Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+../LED.c: In function 'LED_on':
+../LED.c:13: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../LED.c:13: error: (Each undeclared identifier is reported only once
+../LED.c:13: error: for each function it appears in.)
+../LED.c: In function 'LED_off':
+../LED.c:18: error: 'LOGIC_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:41:07 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+../LED.c: In function 'LED_on':
+../LED.c:13: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../LED.c:13: error: (Each undeclared identifier is reported only once
+../LED.c:13: error: for each function it appears in.)
+../LED.c: In function 'LED_off':
+../LED.c:18: error: 'LOGIC_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:51:14 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+In file included from ../PUSH_BUTTON.c:8:
+../PUSH_BUTTON.h:16: error: expected ')' before '*' token
+../PUSH_BUTTON.c: In function 'PB_getButtonState':
+../PUSH_BUTTON.c:18: error: break statement not within loop or switch
+../PUSH_BUTTON.c:20: error: case label not within a switch statement
+../PUSH_BUTTON.c:22: error: break statement not within loop or switch
+../PUSH_BUTTON.c:23: error: case label not within a switch statement
+../PUSH_BUTTON.c:25: error: break statement not within loop or switch
+../PUSH_BUTTON.c:26: error: case label not within a switch statement
+../PUSH_BUTTON.c:28: error: break statement not within loop or switch
+../PUSH_BUTTON.c:30: error: case label not within a switch statement
+../PUSH_BUTTON.c:32: error: break statement not within loop or switch
+../PUSH_BUTTON.c:33: error: case label not within a switch statement
+../PUSH_BUTTON.c:35: error: break statement not within loop or switch
+../PUSH_BUTTON.c:36: error: case label not within a switch statement
+../PUSH_BUTTON.c:38: error: break statement not within loop or switch
+../PUSH_BUTTON.c:39: error: case label not within a switch statement
+../PUSH_BUTTON.c:41: error: break statement not within loop or switch
+make: *** [PUSH_BUTTON.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:36:05 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+In file included from ../PUSH_BUTTON.c:8:
+../PUSH_BUTTON.h:16: error: expected ')' before '*' token
+../PUSH_BUTTON.c: In function 'PB_getButtonState':
+../PUSH_BUTTON.c:18: error: break statement not within loop or switch
+../PUSH_BUTTON.c:20: error: case label not within a switch statement
+../PUSH_BUTTON.c:22: error: break statement not within loop or switch
+../PUSH_BUTTON.c:23: error: case label not within a switch statement
+../PUSH_BUTTON.c:25: error: break statement not within loop or switch
+../PUSH_BUTTON.c:26: error: case label not within a switch statement
+../PUSH_BUTTON.c:28: error: break statement not within loop or switch
+../PUSH_BUTTON.c:30: error: case label not within a switch statement
+../PUSH_BUTTON.c:32: error: break statement not within loop or switch
+../PUSH_BUTTON.c:33: error: case label not within a switch statement
+../PUSH_BUTTON.c:35: error: break statement not within loop or switch
+../PUSH_BUTTON.c:36: error: case label not within a switch statement
+../PUSH_BUTTON.c:38: error: break statement not within loop or switch
+../PUSH_BUTTON.c:39: error: case label not within a switch statement
+../PUSH_BUTTON.c:41: error: break statement not within loop or switch
+make: *** [PUSH_BUTTON.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:21 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+../PUSH_BUTTON.c: In function 'PB_getButtonState':
+../PUSH_BUTTON.c:18: error: break statement not within loop or switch
+../PUSH_BUTTON.c:20: error: case label not within a switch statement
+../PUSH_BUTTON.c:22: error: break statement not within loop or switch
+../PUSH_BUTTON.c:23: error: case label not within a switch statement
+../PUSH_BUTTON.c:25: error: break statement not within loop or switch
+../PUSH_BUTTON.c:26: error: case label not within a switch statement
+../PUSH_BUTTON.c:28: error: break statement not within loop or switch
+../PUSH_BUTTON.c:30: error: case label not within a switch statement
+../PUSH_BUTTON.c:32: error: break statement not within loop or switch
+../PUSH_BUTTON.c:33: error: case label not within a switch statement
+../PUSH_BUTTON.c:35: error: break statement not within loop or switch
+../PUSH_BUTTON.c:36: error: case label not within a switch statement
+../PUSH_BUTTON.c:38: error: break statement not within loop or switch
+../PUSH_BUTTON.c:39: error: case label not within a switch statement
+../PUSH_BUTTON.c:41: error: break statement not within loop or switch
+make: *** [PUSH_BUTTON.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:59 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:116: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:120: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:127: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:131: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:15: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:15: error: (Each undeclared identifier is reported only once
+../main.c:15: error: for each function it appears in.)
+../main.c: In function 'task2':
+../main.c:23: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:25: error: 'PERIPHERAL_C' undeclared (first use in this function)
+../main.c: In function 'main':
+../main.c:36: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:39: error: 'PERIPHERAL_C' undeclared (first use in this function)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:43:19 **** Clean-only build of configuration Debug for project AVR_INTERFACING ****
+make clean 
+rm -rf  AVR_INTERFACING.hex  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o  sizedummy  AVR_INTERFACING.lss  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./EXTI.d ./GIE_R.d ./GPIO.d ./LED.d ./PUSH_BUTTON.d ./Timer0.d ./main.d  AVR_INTERFACING.elf
+ 
+11:43:19 **** Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:116: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:120: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:127: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:131: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:15: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:15: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:15: error: (Each undeclared identifier is reported only once
+../main.c:15: error: for each function it appears in.)
+../main.c: In function 'task2':
+../main.c:23: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:25: error: 'PERIPHERAL_C' undeclared (first use in this function)
+../main.c: In function 'main':
+../main.c:36: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:39: error: 'PERIPHERAL_C' undeclared (first use in this function)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:43:30 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:15: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:15: error: (Each undeclared identifier is reported only once
+../main.c:15: error: for each function it appears in.)
+../main.c: In function 'task2':
+../main.c:23: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:25: error: 'PERIPHERAL_C' undeclared (first use in this function)
+../main.c: In function 'main':
+../main.c:36: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:39: error: 'PERIPHERAL_C' undeclared (first use in this function)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:43:43 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:15: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:15: error: (Each undeclared identifier is reported only once
+../main.c:15: error: for each function it appears in.)
+../main.c: In function 'task2':
+../main.c:23: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:25: error: 'PERIPHERAL_C' undeclared (first use in this function)
+../main.c: In function 'main':
+../main.c:36: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:39: error: 'PERIPHERAL_C' undeclared (first use in this function)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:44:29 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:15: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:17: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:17: error: (Each undeclared identifier is reported only once
+../main.c:17: error: for each function it appears in.)
+../main.c: In function 'task2':
+../main.c:23: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:25: error: 'PERIPHERAL_C' undeclared (first use in this function)
+../main.c: In function 'main':
+../main.c:36: error: 'PERIPHERAL_B' undeclared (first use in this function)
+../main.c:39: error: 'PERIPHERAL_C' undeclared (first use in this function)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:47:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:24: warning: passing argument 1 of 'blinkRedLed' discards qualifiers from pointer target type
+../main.c: In function 'task2':
+../main.c:30: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../main.c:32: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../main.c: In function 'main':
+../main.c:43: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:46: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6742 bytes (41.1% Full)
+(.text + .data + .bootloader)
+
+Data:         26 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:49:36 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'task1':
+../main.c:24: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../main.c: In function 'task2':
+../main.c:30: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../main.c:32: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../main.c: In function 'task3':
+../main.c:39: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../main.c: In function 'main':
+../main.c:45: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:48: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:51: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6764 bytes (41.3% Full)
+(.text + .data + .bootloader)
+
+Data:         26 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:32:06 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:117: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:121: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:128: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:132: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'Timer_setTCNT0Value':
+../Timer0.c:140: error: incompatible types in assignment
+../Timer0.c: In function '__vector_11':
+../Timer0.c:152: error: incompatible types in assignment
+make: *** [Timer0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:32:54 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:117: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:121: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:128: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:132: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:16: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:10: warning: 'ovf_count' initialized and declared 'extern'
+../main.c: In function 'main':
+../main.c:15: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:18: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:7:
+../smallOS.h:12: error: expected specifier-qualifier-list before 'u32'
+../smallOS.c: In function 'blinkLed':
+../smallOS.c:17: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../smallOS.c:18: warning: implicit declaration of function '_delay_ms'
+../smallOS.c: In function 'task1':
+../smallOS.c:27: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:33: warning: implicit declaration of function 'PB_getButtonState'
+../smallOS.c:33: error: 'PRESSED' undeclared (first use in this function)
+../smallOS.c:33: error: (Each undeclared identifier is reported only once
+../smallOS.c:33: error: for each function it appears in.)
+../smallOS.c:35: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:42: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: At top level:
+../smallOS.c:47: warning: excess elements in struct initializer
+../smallOS.c:47: warning: (near initialization for 'tasks[0]')
+../smallOS.c:47: warning: excess elements in struct initializer
+../smallOS.c:47: warning: (near initialization for 'tasks[0]')
+../smallOS.c:47: warning: excess elements in struct initializer
+../smallOS.c:47: warning: (near initialization for 'tasks[1]')
+../smallOS.c:47: warning: excess elements in struct initializer
+../smallOS.c:47: warning: (near initialization for 'tasks[1]')
+../smallOS.c:47: warning: excess elements in struct initializer
+../smallOS.c:47: warning: (near initialization for 'tasks[2]')
+../smallOS.c:47: warning: excess elements in struct initializer
+../smallOS.c:47: warning: (near initialization for 'tasks[2]')
+../smallOS.c: In function 'sechulder':
+../smallOS.c:55: error: 'task_t' has no member named 'periodicity'
+../smallOS.c:57: error: 'task_t' has no member named 'pfun'
+make: *** [smallOS.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:33:19 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:10: warning: 'ovf_count' initialized and declared 'extern'
+../main.c: In function 'main':
+../main.c:15: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:18: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:21: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+../smallOS.c: In function 'blinkLed':
+../smallOS.c:17: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../smallOS.c:18: warning: implicit declaration of function '_delay_ms'
+../smallOS.c: In function 'task1':
+../smallOS.c:27: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:33: warning: implicit declaration of function 'PB_getButtonState'
+../smallOS.c:33: error: 'PRESSED' undeclared (first use in this function)
+../smallOS.c:33: error: (Each undeclared identifier is reported only once
+../smallOS.c:33: error: for each function it appears in.)
+../smallOS.c:35: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:42: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+make: *** [smallOS.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:33:44 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+../smallOS.c: In function 'blinkLed':
+../smallOS.c:17: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../smallOS.c:18: warning: implicit declaration of function '_delay_ms'
+../smallOS.c: In function 'task1':
+../smallOS.c:27: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:33: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:42: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+./main.o: In function `main':
+../main.c:13: multiple definition of `ovf_count'
+./Timer0.o:../Timer0.c:149: first defined here
+./smallOS.o: In function `toggleBlueLed':
+../smallOS.c:12: undefined reference to `_delay_ms'
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:34:28 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'blinkLed':
+../smallOS.c:18: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../smallOS.c: In function 'task1':
+../smallOS.c:28: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:34: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:36: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:43: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+./main.o: In function `main':
+../main.c:13: multiple definition of `ovf_count'
+./Timer0.o:../Timer0.c:149: first defined here
+make: *** [AVR_INTERFACING.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:34:41 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7124 bytes (43.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:05:54 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:117: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:121: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:128: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:132: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:16: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7124 bytes (43.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:13:52 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'blinkLed':
+../smallOS.c:18: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../smallOS.c: In function 'task1':
+../smallOS.c:28: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:34: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:36: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:43: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7140 bytes (43.6% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:17:20 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:38: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7108 bytes (43.4% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:19:14 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7120 bytes (43.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:26:18 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:38: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7120 bytes (43.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:29:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:38: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7120 bytes (43.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:30:16 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:38: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7120 bytes (43.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:32:06 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7156 bytes (43.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:32:50 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'PB_getButtonState' discards qualifiers from pointer target type
+../smallOS.c:38: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7156 bytes (43.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:35:54 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7156 bytes (43.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:40:37 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7156 bytes (43.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:40:51 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7156 bytes (43.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:42:30 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7384 bytes (45.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:42:34 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7384 bytes (45.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:42:41 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7384 bytes (45.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:45:32 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:30: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:42: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:50: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:52: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8372 bytes (51.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:46:18 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7384 bytes (45.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:47:15 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7384 bytes (45.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:47:26 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:46: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7384 bytes (45.1% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:10:14 **** Clean-only build of configuration Debug for project AVR_INTERFACING ****
+make clean 
+rm -rf  AVR_INTERFACING.hex  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o  sizedummy  AVR_INTERFACING.lss  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./EXTI.d ./GIE_R.d ./GPIO.d ./LED.d ./PUSH_BUTTON.d ./Timer0.d ./main.d ./smallOS.d  AVR_INTERFACING.elf
+ 
+09:10:16 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:117: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:121: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:128: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:132: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:16: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:42: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:50: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8160 bytes (49.8% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:11:20 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:42: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:50: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8160 bytes (49.8% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:12:05 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:42: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:50: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8160 bytes (49.8% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:15:49 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:43: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:51: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8136 bytes (49.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:16:34 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c:30: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:43: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:51: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8148 bytes (49.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:17:28 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:42: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:50: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8136 bytes (49.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:17:43 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:29: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:36: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:39: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:42: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:50: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8136 bytes (49.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:18:52 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:30: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:43: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:46: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:54: warning: passing argument 1 of 'blinkLed' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8630 bytes (52.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:22:28 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:30: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:43: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:46: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:54: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:56: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9124 bytes (55.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:23:38 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:30: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:43: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:46: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:54: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:56: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9124 bytes (55.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:28:17 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:30: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:40: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:43: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:46: warning: passing argument 1 of 'toggleBlueLed' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:54: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:56: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9124 bytes (55.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:30:42 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8610 bytes (52.6% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:34:25 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:32: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8610 bytes (52.6% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:40:55 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8638 bytes (52.7% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:41:22 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8600 bytes (52.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:43:39 **** Clean-only build of configuration Debug for project AVR_INTERFACING ****
+make clean 
+rm -rf  AVR_INTERFACING.hex  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o  sizedummy  AVR_INTERFACING.lss  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./EXTI.d ./GIE_R.d ./GPIO.d ./LED.d ./PUSH_BUTTON.d ./Timer0.d ./main.d ./smallOS.d  AVR_INTERFACING.elf
+ 
+11:43:40 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../EXTI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"EXTI.d" -MT"EXTI.o" -c -o "EXTI.o" "../EXTI.c"
+Finished building: ../EXTI.c
+ 
+Building file: ../GIE_R.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GIE_R.d" -MT"GIE_R.o" -c -o "GIE_R.o" "../GIE_R.c"
+Finished building: ../GIE_R.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../PUSH_BUTTON.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"PUSH_BUTTON.d" -MT"PUSH_BUTTON.o" -c -o "PUSH_BUTTON.o" "../PUSH_BUTTON.c"
+Finished building: ../PUSH_BUTTON.c
+ 
+Building file: ../Timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer0.d" -MT"Timer0.o" -c -o "Timer0.o" "../Timer0.c"
+../Timer0.c: In function 'setFastPWM':
+../Timer0.c:117: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:121: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: In function 'setphaseCorrectPWM':
+../Timer0.c:128: warning: suggest parentheses around comparison in operand of &
+../Timer0.c:132: warning: suggest parentheses around comparison in operand of &
+../Timer0.c: At top level:
+../Timer0.c:16: warning: 'ovf_counts_for_delay_fn_CTC' defined but not used
+Finished building: ../Timer0.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8588 bytes (52.4% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:46:22 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:4:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:14: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:17: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:20: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:23: warning: passing argument 1 of 'DIO_voidSetPinDirection' discards qualifiers from pointer target type
+../main.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:27: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../main.c:29: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8588 bytes (52.4% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:59:01 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:35: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8588 bytes (52.4% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:59:42 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:37: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:51: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8598 bytes (52.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:00:12 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: At top level:
+../smallOS.c:40: error: expected identifier or '(' before '}' token
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+make: *** [smallOS.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:00:20 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7854 bytes (47.9% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:17 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:45: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:47: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7824 bytes (47.8% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:02:11 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:48: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:50: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7860 bytes (48.0% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:02:43 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:48: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:50: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7860 bytes (48.0% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:09:39 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:48: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:50: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7860 bytes (48.0% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:10:46 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:48: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:50: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7860 bytes (48.0% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:12:11 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c:37: error: expected expression before '=' token
+../smallOS.c: In function 'task3':
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:51: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+make: *** [smallOS.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:12:23 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:51: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7854 bytes (47.9% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:12:57 **** Incremental Build of configuration Debug for project AVR_INTERFACING ****
+make all 
+Building file: ../smallOS.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smallOS.d" -MT"smallOS.o" -c -o "smallOS.o" "../smallOS.c"
+In file included from ../smallOS.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../smallOS.c: In function 'task1':
+../smallOS.c:23: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:25: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task2':
+../smallOS.c:32: warning: passing argument 1 of 'DIO_voidGetPinValue' discards qualifiers from pointer target type
+../smallOS.c: In function 'task3':
+../smallOS.c:49: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+../smallOS.c:51: warning: passing argument 1 of 'DIO_voidSetPinValue' discards qualifiers from pointer target type
+Finished building: ../smallOS.c
+ 
+Building target: AVR_INTERFACING.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR_INTERFACING.map -mmcu=atmega16 -o "AVR_INTERFACING.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./EXTI.o ./GIE_R.o ./GPIO.o ./LED.o ./PUSH_BUTTON.o ./Timer0.o ./main.o ./smallOS.o   
+Finished building target: AVR_INTERFACING.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR_INTERFACING.elf  >"AVR_INTERFACING.lss"
+Finished building: AVR_INTERFACING.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR_INTERFACING.elf  "AVR_INTERFACING.hex"
+Finished building: AVR_INTERFACING.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 AVR_INTERFACING.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7854 bytes (47.9% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

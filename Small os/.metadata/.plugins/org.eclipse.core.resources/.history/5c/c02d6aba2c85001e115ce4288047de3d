@@ -1,0 +1,37 @@
+#include"LED.h"
+#include"GPIO.h"
+#include"MCU_HW.h"
+#include<util/delay.h>
+#include"PUSH_BUTTON.h"
+
+void toggleBlueLed(GPIO_REGISTERS* ledPort, u8 ledPin)
+{
+	ledPort->PORT_R.ALL_BITS ^= 1<<ledPin;
+}
+void task1()
+{
+	DIO_voidSetPinDirection(PERIPHERAL_B, 0, OUTPUT);
+
+	/*blink red led*/
+	DIO_voidSetPinValue(PERIPHERAL_B, 0, 1);
+	_delay_ms(2);
+	DIO_voidSetPinValue(PERIPHERAL_B, 0, 0);
+
+}
+
+void task2()
+{
+	if(PB_getButtonState(PERIPHERAL_B, 2) == PRESSED)
+	{
+
+	}
+}
+
+void task3()
+{
+
+}
+int main()
+{
+
+}

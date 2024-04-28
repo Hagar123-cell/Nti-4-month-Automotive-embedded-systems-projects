@@ -1,0 +1,45 @@
+/*
+ * ADC_cfg.h
+ *
+ *  Created on: Nov 14, 2023
+ *      Author: OMR
+ */
+
+#ifndef ADC_CFG_H_
+#define ADC_CFG_H_
+
+
+typedef enum
+{
+	AREF,AVCC, INTERNAL=3
+}Vref;
+
+typedef enum
+{
+   RIGHT_ADJUST, LEFT_ADJUST
+}ADJUST_TYPE;
+
+typedef enum
+{
+	PRE_2=1, PRE_4,PRE_8, PRE_16, PRE_32, PRE_64, PRE_128
+}PRESCALER;
+typedef enum
+{
+	  SINGLE_CONVERSION, FREE_RUNNING
+}TRIGGER;
+
+
+typedef struct
+{
+	Vref v;
+	ADJUST_TYPE adjust;
+	PRESCALER pre;
+	TRIGGER trig;
+}ADC_CFG;
+
+typedef enum
+{
+	CH_0, CH_1, CH_2,CH_3,CH_4,CH_5,CH_6, CH_7
+}CHANNEL_NUMBER;
+
+#endif /* ADC_CFG_H_ */

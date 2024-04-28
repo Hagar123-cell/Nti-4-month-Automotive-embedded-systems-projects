@@ -1,0 +1,32 @@
+/*
+ * LM35.c
+ *
+ *  Created on: Nov 9, 2023
+ *      Author: OMR
+ */
+
+#include"LM35.h"
+#include"GPIO.h"
+#include"ADC.h"
+#include"GIE_R.h"
+u16 digital_value;
+void read_ADC_data(u16 data)
+{
+	digital_value = data;
+}
+u8 LM35_getTemperature(void)
+{
+	GIE_enableGlobalInterrupt();
+	ADC_CFG cfg = {AVCC, RIGHT_ADJUST, PRE_16, SINGLE_CONVERSION};
+	ADC_Init(&cfg);
+
+	/*set lm35 pin as output*/
+	DIO_voidSetPinDirection(PERIPHRAL_A, 2, INPUT);
+
+	//ADC_getDigitalValueAsynchCallBack(CH_2, read_ADC_data);
+	//u16 digital_value = ADC_getDigitalValueSynchNonBlocking(CH_2);
+
+	u8 temp = (u8)(digital_value*REF_VOLT_ms*10) / (MAX_DIGITAL_VALUE);
+   return temp;
+}
+
