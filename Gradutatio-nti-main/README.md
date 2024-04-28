@@ -1,5 +1,4 @@
-# Gradutatio-nti
-FOTA WITH CAN - using STM32F103 NOVEMBER 2023
+#FOTA WITH CAN - using STM32F103 NOVEMBER 2023
 
 • Led the development of a FOTA solution with CAN integration using STM32F103 microcontrollers.
 Key Achievements:
